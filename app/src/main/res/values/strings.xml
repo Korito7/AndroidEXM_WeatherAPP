@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidCourseEXM3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="icon_weather_main">Weather Icon</string>
+    <string name="icon_weather_item">Weather Icon</string>
+</resources>
