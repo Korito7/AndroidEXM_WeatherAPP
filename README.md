@@ -41,6 +41,12 @@ python CognitiveDiagnosis_final/main.py
 2. 构建认知水平诊断文件，其结构可参考`resource/data/learner_example.json`
 3. 在`agents/path.json`中分别配置上述两个文件的路径
 
+### 测试脚本
+单独运行test.py即可根据答题分析文件按6：4自动划分训练集与测试集，并输出在测试集上的准确率。同样需手动完成以下步骤：
+1. 构建答题分析文件，其结构可参考`resource/data/test_example.json`
+2. 构建认知水平诊断文件，其结构可参考`resource/data/learner_example.json`
+3. 在`agents/path.json`中分别配置上述两个文件的路径
+
 ## 主要功能模块
 1. **评估代理（AssessmentAgent）**：对学习者的答题过程进行评估，判断答案正确与否
 2. **追踪代理（TraceAgent）**：追踪学习者答题过程中涉及的先前知识
