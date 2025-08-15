@@ -37,8 +37,8 @@ python CognitiveDiagnosis_final/main.py
 
 ### 单独运行
 若单独运行本认知诊断模块，需手动完成以下步骤：
-1. 构建答题分析文件，其结构可参考`test_example.json`
-2. 构建认知水平诊断文件，其结构可参考`learner_example.json`
+1. 构建答题分析文件，其结构可参考`resource/data/test_example.json`
+2. 构建认知水平诊断文件，其结构可参考`resource/data/learner_example.json`
 3. 在`agents/path.json`中分别配置上述两个文件的路径
 
 ## 主要功能模块
