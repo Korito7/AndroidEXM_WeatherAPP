@@ -6,7 +6,7 @@
 ## 快速开始
 
 ### 环境要求
-- Python 3.8+
+- Python 3.12+
 - 相关依赖库（可通过`pip install -r requirements.txt`安装，具体依赖需根据实际代码补充）
 
 ### 直接运行认知诊断模块
@@ -21,8 +21,8 @@ python CognitiveDiagnosis_final/main.py
 `agents/path.json`文件用于配置输入输出文件路径，格式如下：
 ```json
 {
-    "test_path": "路径/到/答题分析文件.json",
-    "learner_path": "路径/到/认知水平诊断文件.json"
+    "test_path": "Path/to/答题分析文件.json",
+    "learner_path": "Path/to/认知水平诊断文件.json"
 }
 ```
 可根据实际需求修改上述路径。
@@ -37,8 +37,8 @@ python CognitiveDiagnosis_final/main.py
 
 ### 单独运行
 若单独运行本认知诊断模块，需手动完成以下步骤：
-1. 构建答题分析文件，其结构可参考`test_example.json`（示例文件需根据实际情况提供）
-2. 构建认知水平诊断文件，其结构可参考`learner_example.json`（示例文件需根据实际情况提供）
+1. 构建答题分析文件，其结构可参考`test_example.json`
+2. 构建认知水平诊断文件，其结构可参考`learner_example.json`
 3. 在`agents/path.json`中分别配置上述两个文件的路径
 
 ## 主要功能模块
@@ -54,5 +54,5 @@ python CognitiveDiagnosis_final/main.py
 
 ## 注意事项
 - 确保答题分析文件格式正确，否则可能导致系统运行错误
-- 若修改了`path.json`中的路径，需确保对应路径下的文件存在（系统会尝试自动创建不存在的文件，但建议提前准备）
+- 若修改了`path.json`中的路径，需确保对应路径下的文件存在（与系统一起运行时会尝试自动创建不存在的文件，模块单独运行时需提前准备）
 - 运行过程中若出现错误，可查看日志信息进行排查，日志格式为`%(asctime)s - %(levelname)s - %(message)s`
